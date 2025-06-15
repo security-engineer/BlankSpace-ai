@@ -7,7 +7,10 @@ WORKDIR /app
 # 시스템 의존성 패키지를 설치합니다 (whisper에 필요한 ffmpeg 등).
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
- && rm -rf /var/lib/apt/lists/*
+    && apt-get upgrade \
+    && apt update -y && apt upgrade -y \
+    && apt install -y procps vim build-essential \
+    && rm -rf /var/lib/apt/lists/*
 
 # requirements.txt 파일을 컨테이너의 /app 디렉토리로 복사합니다.
 COPY requirements.txt .

@@ -1,0 +1,242 @@
+--- ChromaDB 데이터 검증 시작 ---
+연결 대상: chromadb:8000
+✅ ChromaDB 연결 성공!
+'products' 컬렉션 확인 중...
+✅ 총 문서 개수: 58개
+
+--- 샘플 데이터 (최대 5개) ---
+
+[문서 ID: 675058ec92781fcb0f529bd0]
+  - 메타데이터: {'category': 'top', 'description': 'A soft-touch fabric that feels gentle and comfortable against the skin.Ribbed cuffs and hem for a snug and stylish fit.A practical and iconic kangaroo pocket design for convenience and casual appeal.A semi-oversized fit for a relaxed yet trendy silhouette.Made from 100% polyester with a weight of 535 grams, ensuring durability and quality.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733318586/ybzasljhqdngbo2iaxf7.jpg', 'name': 'Big Face Hoodie Jip-up Black', 'price': 112500, 'product_id': '675058ec92781fcb0f529bd0', 'sku': '001', 'stock': 's: 6개'}
+--------------------
+
+[문서 ID: 67505ef992966126e8717ff2]
+  - 메타데이터: {'category': 'top', 'description': 'A soft-touch fabric that feels gentle and comfortable against the skin.Ribbed cuffs and hem for a snug and stylish fit.A practical and iconic kangaroo pocket design for convenience and casual appeal.A semi-oversized fit for a relaxed yet trendy silhouette.Made from 100% polyester with a weight of 535 grams, ensuring durability and quality.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733320192/vahvzcbgkhksh9fg5w0d.jpg', 'name': 'Big Face Hoodie Jip-up Gray', 'price': 112500, 'product_id': '67505ef992966126e8717ff2', 'sku': '002', 'stock': 'l: 13개'}
+--------------------
+
+[문서 ID: 675061c992966126e8718030]
+  - 메타데이터: {'category': 'top', 'description': 'A soft-touch fabric that feels gentle and comfortable against the skin.Ribbed cuffs and hem for a snug and stylish fit.A practical and iconic kangaroo pocket design for convenience and casual appeal. A semi-oversized fit for a relaxed yet trendy silhouette.Made from 100% polyester with a weight of 535 grams, ensuring durability and quality.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733320933/zvkhsxiu9lqhj439kgd9.jpg', 'name': 'Big Face Hoodie Jip-up Moka', 'price': 112500, 'product_id': '675061c992966126e8718030', 'sku': '003', 'stock': 's: 30개, m: 18개'}
+--------------------
+
+[문서 ID: 675064b392966126e8718061]
+  - 메타데이터: {'category': 'top', 'description': 'A soft-touch material offering a smooth and comfortable feel against the skin.Ribbed cuffs and hem for a secure, stylish finish that enhances the overall fit.Raglan sleeves designed for a more dynamic and natural range of motion, providing both comfort and a modern aesthetic.A spread collar that adds a touch of sophistication and versatility to the design.A semi-oversized fit that strikes the perfect balance between relaxed comfort and contemporary style.Crafted with a weight of 535 grams, ensuring a substantial and premium-quality feel.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733321634/ietmpocmhyt9frmvlmpf.jpg', 'name': 'Wool Overfit Button Kara Knit - Oatmeal', 'price': 92000, 'product_id': '675064b392966126e8718061', 'sku': '004', 'stock': 's: 20개, m: 7개'}
+--------------------
+
+[문서 ID: 67506bd56ad22b8cfc665d5a]
+  - 메타데이터: {'category': 'outer', 'description': 'The jacket features a minimalistic design with a stand collar, allowing for a clean and versatile look. It includes a two-way zipper for easy opening and closing. The back has a rounded fit, providing a comfortable and flattering shape. The hem is equipped with a stopper and drawstring, allowing for adjustable styling, while the sleeves have elastic bands for a snug fit.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733323669/yqyclwsbjmi63p6euadz.jpg', 'name': 'Stand Invisible Padding', 'price': 189000, 'product_id': '67506bd56ad22b8cfc665d5a', 'sku': '005', 'stock': 's: 12개, m: 15개'}
+--------------------
+
+[문서 ID: 67506c766ad22b8cfc665d5f]
+  - 메타데이터: {'category': 'outer', 'description': "\nThe jacket features a 3-button closure and flap pockets. It is adorned with buttons engraved with the Lemard logo, made from horn. The cuffs have four buttons each, and there's a back slit for added mobility. The jacket is fully lined for comfort and a polished finish.", 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733323839/tg05ywc3wp2ffw6gimd5.jpg', 'name': ' Plaid Tailored Jacket', 'price': 219000, 'product_id': '67506c766ad22b8cfc665d5f', 'sku': '006', 'stock': 'm: 32개, l: 29개'}
+--------------------
+
+[문서 ID: 67506d416ad22b8cfc665d68]
+  - 메타데이터: {'category': 'outer', 'description': 'This coat is made from a wool blend fabric with a textured feel. It features full interfacing for added structure and oversized flap pockets as well as side pockets. The cuffs are designed with buttoned straps, each with two buttons. It also includes horn buttons engraved with the Lemard logo, a belt detail at the waist, a back slit, and a full lining for added comfort and a refined finish.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733324021/xj9fqwqu5tv8wpaoulcu.jpg', 'name': ' Level Mac Long Coat - Brown', 'price': 329000, 'product_id': '67506d416ad22b8cfc665d68', 'sku': '007', 'stock': 'xs: 20개, s: 20개'}
+--------------------
+
+[문서 ID: 67506de06ad22b8cfc665d6d]
+  - 메타데이터: {'category': 'outer', 'description': 'This coat is made from a wool blend fabric with a textured feel. It features full interfacing for added structure and oversized flap pockets as well as side pockets. The cuffs are designed with buttoned straps, each with two buttons. It also includes horn buttons engraved with the Lemard logo, a belt detail at the waist, a back slit, and a full lining for added comfort and a refined finish.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733324169/qp7cgmimby3zvwucvs4a.jpg', 'name': 'Level Mac Long Coat - Black', 'price': 329000, 'product_id': '67506de06ad22b8cfc665d6d', 'sku': '008', 'stock': 'xs: 20개, m: 23개, l: 18개'}
+--------------------
+
+[문서 ID: 67506ec26ad22b8cfc665da8]
+  - 메타데이터: {'category': 'outer', 'description': 'This blazer is crafted from a wool blend fabric with a soft texture. It features a two-button closure, three patch pockets, and horn buttons engraved with the Lemard logo. The sleeves and back both have slits for ease of movement, and the blazer is fully lined for added comfort and a refined appearance.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733324392/oboumeovccza9bad2aoc.jpg', 'name': ' Half Wool Setup Blazer - Black', 'price': 184000, 'product_id': '67506ec26ad22b8cfc665da8', 'sku': '009', 'stock': 'xs: 32개, s: 28개'}
+--------------------
+
+[문서 ID: 67506f496ad22b8cfc665dad]
+  - 메타데이터: {'category': 'outer', 'description': '\nThis blazer is crafted from a wool blend fabric with a soft texture. It features a two-button closure, three patch pockets, and horn buttons engraved with the Lemard logo. The sleeves and back both have slits for ease of movement, and the blazer is fully lined for added comfort and a refined appearance.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733324559/phd9g9xrpjt8qhbvhbod.jpg', 'name': 'Half Wool Setup Blazer - Brown', 'price': 184000, 'product_id': '67506f496ad22b8cfc665dad', 'sku': '010', 'stock': 's: 18개, m: 27개'}
+--------------------
+
+[문서 ID: 6750705e6ad22b8cfc665db2]
+  - 메타데이터: {'category': 'outer', 'description': 'This jacket features a corduroy contrast collar and front 3D pockets for a unique look. It comes with an antique gold two-way zipper for versatility, and the jacket is fully lined for comfort and warmth.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733324817/pipkkxmsks0hhiqpzux1.jpg', 'name': 'Padded Barber Jacket - Black', 'price': 289000, 'product_id': '6750705e6ad22b8cfc665db2', 'sku': '011', 'stock': 's: 29개'}
+--------------------
+
+[문서 ID: 675072ee6ad22b8cfc665f40]
+  - 메타데이터: {'category': 'outer', 'description': 'This jacket features a corduroy contrast collar and front 3D pockets for a unique look. It comes with an antique gold two-way zipper for versatility, and the jacket is fully lined for comfort and warmth.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733325473/dnjnxztihwuzbskkb6ia.jpg', 'name': 'Padded Barber Jacket - Burgundy', 'price': 289000, 'product_id': '675072ee6ad22b8cfc665f40', 'sku': '012', 'stock': 'm: 20개'}
+--------------------
+
+[문서 ID: 675077826ad22b8cfc665fe1]
+  - 메타데이터: {'category': 'outer', 'description': '\nThis jacket features a seamless high-neck design with unique pattern detailing. The cuffs have zip slits, and there are patch zipper pockets on the outer surface. A strap detail is included at the back hem for an added touch. It uses an antique gold-tone YKK No. 8 zipper, and the interior is fully lined with shearling for warmth and comfort.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733326632/tafiuzwn4dzfigksalys.jpg', 'name': 'Suede High Neck Mustang Jacket - Black', 'price': 299000, 'product_id': '675077826ad22b8cfc665fe1', 'sku': '013', 'stock': 'l: 13개, xl: 19개'}
+--------------------
+
+[문서 ID: 6750784d6ad22b8cfc665fe6]
+  - 메타데이터: {'category': 'outer', 'description': '\nThis jacket features a detachable boucle collar with buckle detailing, along with flap pockets and sleeve paneling for added character. It is adorned with a Lemard logo-engraved D-ring and equipped with an antique gold-tone YKK No. 8 zipper and snap closures. The hem has a banded design, while the cuffs include slits for better movement. The entire jacket is lined with shearling for extra warmth and comfort.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733326826/bqhjhabt4cv0fhersl7f.jpg', 'name': ' Flying Mustang Jacket - Black', 'price': 289000, 'product_id': '6750784d6ad22b8cfc665fe6', 'sku': '014', 'stock': 'm: 12개, l: 11개'}
+--------------------
+
+[문서 ID: 675078f66ad22b8cfc665feb]
+  - 메타데이터: {'category': 'outer', 'description': 'This jacket features a detachable boucle collar with buckle detailing, along with flap pockets and sleeve paneling for added character. It is adorned with a Lemard logo-engraved D-ring and equipped with an antique gold-tone YKK No. 8 zipper and snap closures. The hem has a banded design, while the cuffs include slits for better movement. The entire jacket is lined with shearling for extra warmth and comfort.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733327023/vzozx4kiqjbo2fgroyfo.jpg', 'name': 'Flying Mustang Jacket - Brown', 'price': 289000, 'product_id': '675078f66ad22b8cfc665feb', 'sku': '015', 'stock': 'm: 15개'}
+--------------------
+
+[문서 ID: 67507a796ad22b8cfc666010]
+  - 메타데이터: {'category': 'outer', 'description': 'This jacket features a washed leather texture and a stand collar for a classic look. It includes zipper pockets and antique silver snap closures, along with a YKK two-way zipper for added versatility. The back has a strap detail for extra style, and the jacket is fully lined for comfort.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733327392/s9qgmrphy8s380ejvqzi.jpg', 'name': 'Stand Collar Jacket', 'price': 208000, 'product_id': '67507a796ad22b8cfc666010', 'sku': '016', 'stock': 's: 29개, m: 18개'}
+--------------------
+
+[문서 ID: 6750807b92966126e871811d]
+  - 메타데이터: {'category': 'top', 'description': 'A soft-touch material offering a smooth and comfortable feel against the skin.Ribbed cuffs and hem for a secure, stylish finish that enhances the overall fit.Raglan sleeves designed for a more dynamic and natural range of motion, providing both comfort and a modern aesthetic.A spread collar that adds a touch of sophistication and versatility to the design.A semi-oversized fit that strikes the perfect balance between relaxed comfort and contemporary style.Crafted with a weight of 535 grams, ensuring a substantial and premium-quality feel.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733328756/pttdqw5t3ua5iohg0zuk.jpg', 'name': '\tWool Overfit Button Kara Knit - Red', 'price': 92000, 'product_id': '6750807b92966126e871811d', 'sku': '017', 'stock': 'l: 10개'}
+--------------------
+
+[문서 ID: 67508111fec951d9dfed3535]
+  - 메타데이터: {'category': 'pants', 'description': 'These pants feature dyed garment washing for a distinct, worn-in look. They include pocket rivet detailing and hardware engraved with the logo, finished in an antique silver tone.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733329086/p4d9dnwkfnluuyoyigav.jpg', 'name': ' Damage Dyed Denim Pants - Black', 'price': 98000, 'product_id': '67508111fec951d9dfed3535', 'sku': '018', 'stock': 's: 26개, m: 21개'}
+--------------------
+
+[문서 ID: 6750817092966126e8718165]
+  - 메타데이터: {'category': 'top', 'description': 'A soft-touch material offering a smooth and comfortable feel against the skin.Ribbed cuffs and hem for a secure, stylish finish that enhances the overall fit.Raglan sleeves designed for a more dynamic and natural range of motion, providing both comfort and a modern aesthetic.A spread collar that adds a touch of sophistication and versatility to the design.A semi-oversized fit that strikes the perfect balance between relaxed comfort and contemporary style.Crafted with a weight of 535 grams, ensuring a substantial and premium-quality feel.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733329095/criv6xwfyj72pyb8ak2j.jpg', 'name': '7\tWool Overfit Button Kara Knit - Yellow', 'price': 92000, 'product_id': '6750817092966126e8718165', 'sku': '019', 'stock': 'm: 10개, l: 8개'}
+--------------------
+
+[문서 ID: 675081b2fec951d9dfed354a]
+  - 메타데이터: {'category': 'pants', 'description': '\nThese pants feature dyed garment washing for a distinct, worn-in look. They include pocket rivet detailing and hardware engraved with the logo, finished in an antique silver tone.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733329250/m8zrwrtshkpz5u6dlamv.jpg', 'name': 'Damage Dyed Denim Pants - Grey', 'price': 98000, 'product_id': '675081b2fec951d9dfed354a', 'sku': '020', 'stock': 'm: 23개'}
+--------------------
+
+[문서 ID: 67508297fec951d9dfed3591]
+  - 메타데이터: {'category': 'pants', 'description': 'These pants feature brush and cat whisker washing techniques for a unique texture and distressed look. They come with pocket rivet detailing and silver-tone YKK hardware for added durability and style.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733329492/gwhrrxr5ixcgvra4gqox.jpg', 'name': ' Straight Washed Denim Pants - Indigo', 'price': 98000, 'product_id': '67508297fec951d9dfed3591', 'sku': '021', 'stock': 's: 21개'}
+--------------------
+
+[문서 ID: 675082c792966126e87181c1]
+  - 메타데이터: {'category': 'top', 'description': 'Crafted from a soft-touch polyester blend yarn, offering a smooth and cozy feel.Features ribbed detailing on the crew neckline, cuffs, and hem for a polished and snug finish.Designed with a classic cable-knit pattern, adding texture and timeless elegance to the piece.Boasts a semi-oversized silhouette for a relaxed yet contemporary fit that suits various occasions.Includes raglan sleeves that provide enhanced mobility and a refined, modern aesthetic.Weighing 840 grams, ensuring a substantial and premium-quality construction.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733329391/a9r8p8f7btjaorpj8kqx.jpg', 'name': 'Heavy Round Cardigan - Charcol', 'price': 124000, 'product_id': '675082c792966126e87181c1', 'sku': '022', 'stock': 'l: 23개, xl: 10개'}
+--------------------
+
+[문서 ID: 67508364fec951d9dfed35a1]
+  - 메타데이터: {'category': '', 'description': 'These pants have a relaxed fit silhouette, featuring a single tuck and a crease line for a tailored touch. The weight of the fabric is 695 grams, providing a substantial yet comfortable feel.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733329591/csjskflbz1cqxorrdton.jpg', 'name': ' Half Wool Setup Pants - Black', 'price': 92000, 'product_id': '67508364fec951d9dfed35a1', 'sku': '023', 'stock': 'l: 22개, xl: 40개'}
+--------------------
+
+[문서 ID: 6750843192966126e87181de]
+  - 메타데이터: {'category': '', 'description': 'Crafted from a soft-touch polyester blend yarn, offering a smooth and cozy feel.Features ribbed detailing on the crew neckline, cuffs, and hem for a polished and snug finish.Designed with a classic cable-knit pattern, adding texture and timeless elegance to the piece.Boasts a semi-oversized silhouette for a relaxed yet contemporary fit that suits various occasions.Includes raglan sleeves that provide enhanced mobility and a refined, modern aesthetic.Weighing 840 grams, ensuring a substantial and premium-quality construction.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733329682/prrmkholcy7ysaturs4u.jpg', 'name': 'Heavy Round Cardigan - Blue Gray', 'price': 124000, 'product_id': '6750843192966126e87181de', 'sku': '024', 'stock': 'm: 30개'}
+--------------------
+
+[문서 ID: 6750883992966126e87181ff]
+  - 메타데이터: {'category': 'top', 'description': 'Designed with an oversized silhouette, offering a relaxed and effortlessly stylish fit.Treated with a silicone wash for a soft texture and a slightly worn-in, vintage feel.Features patch pockets that combine practicality with a classic, utilitarian look.Accented with a curved hemline for a modern, sophisticated touch that enhances the overall design.Weighs 350 grams, striking a balance between lightweight comfort and quality construction.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733330336/j4g9cwfzjwpxarprd8xz.jpg', 'name': 'Cotton Washing Shirts - Charcol', 'price': 94000, 'product_id': '6750883992966126e87181ff', 'sku': '025', 'stock': 's: 10개, m: 10개'}
+--------------------
+
+[문서 ID: 6750885bfec951d9dfed378e]
+  - 메타데이터: {'category': 'pants', 'description': '\nThese pants feature side pockets and front panels with a suede fabric contrast. They include a hidden zipper pocket on the inside for added functionality, along with snap carpenter details for a utilitarian look.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733330764/apwd9axsdquar3grpeld.jpg', 'name': ' Snap Double Knee Carpenter Pants - Black', 'price': 138000, 'product_id': '6750885bfec951d9dfed378e', 'sku': '026', 'stock': 'm: 40개'}
+--------------------
+
+[문서 ID: 675088f4fec951d9dfed37aa]
+  - 메타데이터: {'category': '', 'description': 'These pants feature side pockets and front panels with a suede fabric contrast. They include a hidden zipper pocket on the inside for added functionality, along with snap carpenter details for a utilitarian look.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733331130/min0qcod0hn5kdvk5rrb.jpg', 'name': 'Snap Double Knee Carpenter Pants - Brown', 'price': 138000, 'product_id': '675088f4fec951d9dfed37aa', 'sku': '027', 'stock': 'm: 22개'}
+--------------------
+
+[문서 ID: 675089a1fec951d9dfed37fb]
+  - 메타데이터: {'category': 'pants', 'description': '\nThese pants are crafted from an acrylic-poly blend fabric with a leather-like texture. They feature diagonal seam lines, welt pockets, and tuck detailing at the hem. The pants are also adorned with a D-ring engraved with the Lemard logo, adding a signature touch to the design.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733331303/gji1pxnnxsbegfdg1540.jpg', 'name': ' Leather Dart D-Ring Pants - Brown', 'price': 127000, 'product_id': '675089a1fec951d9dfed37fb', 'sku': '028', 'stock': 's: 42개, m: 23개'}
+--------------------
+
+[문서 ID: 67508a8bfec951d9dfed3800]
+  - 메타데이터: {'category': '', 'description': 'These pants are crafted from an acrylic-poly blend fabric with a leather-like texture. They feature diagonal seam lines, welt pockets, and tuck detailing at the hem. The pants are also adorned with a D-ring engraved with the Lemard logo, adding a signature touch to the design.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733331520/wh6m8tbuw6j4yc5xx4ia.jpg', 'name': ' Washed Cotton Carpenter Pants - Beige', 'price': 10600, 'product_id': '67508a8bfec951d9dfed3800', 'sku': '029', 'stock': 'm: 33개, xl: 33개'}
+--------------------
+
+[문서 ID: 67508b1e92966126e8718259]
+  - 메타데이터: {'category': 'top', 'description': 'Designed with an oversized silhouette, offering a relaxed and effortlessly stylish fit.Treated with a silicone wash for a soft texture and a slightly worn-in, vintage feel.Features patch pockets that combine practicality with a classic, utilitarian look.Accented with a curved hemline for a modern, sophisticated touch that enhances the overall design.Weighs 350 grams, striking a balance between lightweight comfort and quality construction.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733331089/sccegf4uidy9vrgaitvp.jpg', 'name': 'Cotton Washing Shirts - Ivory', 'price': 94000, 'product_id': '67508b1e92966126e8718259', 'sku': '030', 'stock': 's: 20개'}
+--------------------
+
+[문서 ID: 67508b49fec951d9dfed3814]
+  - 메타데이터: {'category': 'pants', 'description': '\nThese pants feature patch pockets with rivet detailing and front seam lines for a unique look. They include side pockets, as well as dart detailing at the hem with a curved line for added shape. The sulfur-dyed garment wash gives them a worn-in, vintage appearance, while the carpenter detailing enhances their utility aesthetic. The pants are also equipped with antique gold-tone hardware engraved with the logo for an elegant finish.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733331719/hrh64scg3niziwivrpkq.jpg', 'name': 'Washed Dyed Work Pants - Light Grey', 'price': 115000, 'product_id': '67508b49fec951d9dfed3814', 'sku': '031', 'stock': 'xs: 53개, s: 32개'}
+--------------------
+
+[문서 ID: 67508beafec951d9dfed3827]
+  - 메타데이터: {'category': 'pants', 'description': 'These pants are made from 13.5-ounce denim fabric, featuring fading wash and distressed details for a rugged look. They include a zipper fly, a leather logo patch, and silver-tone YKK hardware, adding a high-quality finish to the design.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733331891/cinhwq65j6sqxhd71tuz.jpg', 'name': 'Damaged Denim Pants - Indigo', 'price': 91000, 'product_id': '67508beafec951d9dfed3827', 'sku': '032', 'stock': 'm: 53개'}
+--------------------
+
+[문서 ID: 67508d40fec951d9dfed38a8]
+  - 메타데이터: {'category': 'pants', 'description': 'These slacks are made from a high-density fabric with a soft texture, providing comfort and durability. The front pockets have a unique, modified shape, and there are vertical seam lines on both the front side and back side for added structure. The pants also feature reverse-direction double tuck detailing at the sides, creating a voluminous yet tailored silhouette.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733332197/fvrgjseqmtftwhvwaqfo.jpg', 'name': ' Reverse Balloon Slacks - Charcoal', 'price': 92000, 'product_id': '67508d40fec951d9dfed38a8', 'sku': '033', 'stock': 'm: 21개'}
+--------------------
+
+[문서 ID: 675092ca92966126e8718265]
+  - 메타데이터: {'category': '', 'description': 'Designed with an asymmetrical pocket for a unique and eye-catching detail that sets it apart.Features Canton detailing, adding a distinctive and refined touch to the overall design.Includes back rivet accents that enhance durability while providing a subtle industrial aesthetic.Showcases sleeve panel rivet details for added texture and a contemporary twist on classic elements.Weighs 560 grams, ensuring a sturdy and high-quality construction that combines style with substance.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733332925/qxvypievamyvtrjqxrat.jpg', 'name': 'Suede Canton Shirt - Brown', 'price': 144000, 'product_id': '675092ca92966126e8718265', 'sku': '0034', 'stock': 'm: 20개, l: 14개'}
+--------------------
+
+[문서 ID: 67513cef2c4382ca03977803]
+  - 메타데이터: {'category': 'top', 'description': 'Designed with an asymmetrical pocket for a unique and eye-catching detail that sets it apart.Features Canton detailing, adding a distinctive and refined touch to the overall design.Includes back rivet accents that enhance durability while providing a subtle industrial aesthetic.Showcases sleeve panel rivet details for added texture and a contemporary twist on classic elements.Weighs 560 grams, ensuring a sturdy and high-quality construction that combines style with substance.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733376991/ovvoklwoh3e6v6nymgox.jpg', 'name': 'Suede Canton Shirt - Burgundy', 'price': 144000, 'product_id': '67513cef2c4382ca03977803', 'sku': '035', 'stock': 'l: 20개, xl: 8개'}
+--------------------
+
+[문서 ID: 675141a72c4382ca0397781e]
+  - 메타데이터: {'category': 'shoes', 'description': 'Available sizes: 250, 260, 270, 280 (in increments of 10).Heel height: 3 cm.Please note that due to the handcrafted nature of these shoes, each pair is made to order. As a result, the delivery period will take approximately 2 weeks (14 days).', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733378307/u0hhd4uyic9cb3afjga3.jpg', 'name': 'Crack Derby Shoes - Black', 'price': 240000, 'product_id': '675141a72c4382ca0397781e', 'sku': '036', 'stock': 'm: 3개'}
+--------------------
+
+[문서 ID: 6751436e2c4382ca039778c2]
+  - 메타데이터: {'category': '', 'description': 'Available sizes: 250, 260, 270, 280 (in increments of 10).Heel height: 3 cm.Please note that due to the handcrafted nature of these shoes, each pair is made to order. As a result, the delivery period will take approximately 2 weeks (14 days).', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733378804/tqxo0d9gvs906qrmyn8b.jpg', 'name': 'European Derby Shoes - White', 'price': 195000, 'product_id': '6751436e2c4382ca039778c2', 'sku': '037', 'stock': 'm: 2개'}
+--------------------
+
+[문서 ID: 675144c92c4382ca039778ce]
+  - 메타데이터: {'category': 'shoes', 'description': 'Available sizes: 250, 260, 270, 280 (in increments of 10).Heel height: 3 cm.Please note that due to the handcrafted nature of these shoes, each pair is made to order. As a result, the delivery period will take approximately 2 weeks (14 days).', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733379053/z64y2iz8ha9c8ls9coxc.jpg', 'name': 'European Derby Shoes - Black', 'price': 195000, 'product_id': '675144c92c4382ca039778ce', 'sku': '038', 'stock': 's: 3개, m: 3개'}
+--------------------
+
+[문서 ID: 675147622c4382ca039778da]
+  - 메타데이터: {'category': 'shoes', 'description': 'Crafted using vegetable-tanned leather, the welt is designed to age beautifully over time, developing unique character and natural patina as it matures.Features a lightweight crepe sole, specially developed to provide an ultra-light feel and exceptional comfort for everyday wear.Every finishing detail is meticulously completed by hand, ensuring superior craftsmanship and attention to detail.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733379552/ztuiwcy22jvpfmdmplsj.jpg', 'name': 'Wallabee Back Tab Boots - Beige', 'price': 240000, 'product_id': '675147622c4382ca039778da', 'sku': '039', 'stock': 'm: 3개, l: 2개'}
+--------------------
+
+[문서 ID: 6751485f2c4382ca039778e6]
+  - 메타데이터: {'category': 'shoes', 'description': 'Crafted using vegetable-tanned leather, the welt is designed to age beautifully over time, developing unique character and natural patina as it matures.Features a lightweight crepe sole, specially developed to provide an ultra-light feel and exceptional comfort for everyday wear.Every finishing detail is meticulously completed by hand, ensuring superior craftsmanship and attention to detail.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733380075/yi5usv0bhqlmocwnvvid.jpg', 'name': 'Wallabee Back Tab Boots - Black', 'price': 244000, 'product_id': '6751485f2c4382ca039778e6', 'sku': '040', 'stock': 's: 2개'}
+--------------------
+
+[문서 ID: 67517c794d1f5eaa4135dae3]
+  - 메타데이터: {'category': 'acc', 'description': 'Designed with a reversible feature, this neck warmer offers two versatile styles: one side made of soft suede for a sleek and sophisticated look, and the other side crafted from cozy sherpa fleece for added warmth and a casual aesthetic.Constructed with meticulous full-linking techniques, this piece ensures durability and a seamless, polished appearance, providing both functionality and style. Weighs 215 grams, striking the perfect balance between lightweight comfort and substantial quality.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733393435/unxymnyidptfa4uminzk.jpg', 'name': 'Mustang Neck Warmer', 'price': 69000, 'product_id': '67517c794d1f5eaa4135dae3', 'sku': '041', 'stock': 'm: 10개, l: 10개'}
+--------------------
+
+[문서 ID: 67517d1d4d1f5eaa4135daef]
+  - 메타데이터: {'category': '', 'description': 'Crafted from high-quality natural Italian cowhide leather, this belt features a refined, luxurious gloss that enhances its sophisticated appeal. Accented with antique nickel components that add a touch of timeless elegance and durability to the overall design. Designed with a distinctive variation in belt width, offering a modern twist and a bold visual statement.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733393598/j7d0vkhz82yqqovilmyz.jpg', 'name': 'Non-Buckle Layered Belt - Leather Black', 'price': 69000, 'product_id': '67517d1d4d1f5eaa4135daef', 'sku': '042', 'stock': 'm: 20개, l: 20개'}
+--------------------
+
+[문서 ID: 67517d924d1f5eaa4135dafb]
+  - 메타데이터: {'category': 'acc', 'description': 'Crafted from high-quality natural Italian cowhide leather, this belt features a refined, luxurious gloss that enhances its sophisticated appeal. Accented with antique nickel components that add a touch of timeless elegance and durability to the overall design. Designed with a distinctive variation in belt width, offering a modern twist and a bold visual statement.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733393753/vklfmqa80p2biv9hhlgd.jpg', 'name': 'Non-Buckle Layered Belt - Suede Brown', 'price': 69000, 'product_id': '67517d924d1f5eaa4135dafb', 'sku': '043', 'stock': 'm: 20개, l: 20개'}
+--------------------
+
+[문서 ID: 67517f944d1f5eaa4135db07]
+  - 메타데이터: {'category': '', 'description': 'Made from high-quality natural Italian cowhide leather, this belt showcases a refined and elegant gloss, offering a timeless and sophisticated appearance.Finished with antique nickel hardware for enhanced durability and a classic touch of understated elegance.Width: 2.5 cm,Length: 125 cm', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733394006/h8nmzr4vf7b3ddju74wh.jpg', 'name': 'Standard Minimal Belt - Leather Black', 'price': 52000, 'product_id': '67517f944d1f5eaa4135db07', 'sku': '044', 'stock': 'm: 10개, l: 10개'}
+--------------------
+
+[문서 ID: 675197d54d1f5eaa4135db13]
+  - 메타데이터: {'category': 'acc', 'description': 'Made from high-quality natural Italian cowhide leather, this belt showcases a refined and elegant gloss, offering a timeless and sophisticated appearance.Finished with antique nickel hardware for enhanced durability and a classic touch of understated elegance.Width: 2.5 cm,Length: 125 cm', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733400437/yhorfijuyepgss0zwszf.jpg', 'name': 'Standard Minimal Belt - Suede Brown', 'price': 52000, 'product_id': '675197d54d1f5eaa4135db13', 'sku': '045', 'stock': 'm: 10개, l: 10개'}
+--------------------
+
+[문서 ID: 6751988d4d1f5eaa4135db22]
+  - 메타데이터: {'category': '', 'description': 'Crafted from premium suede material, this cap features a soft and smooth texture that adds a touch of elegance and sophistication to your look. Enhanced with a functional string design, complemented by a trim engraved with the LEMARD logo for a subtle yet refined branding detail. Designed with an adjustable fit, allowing for personalized comfort and a secure wear suitable for various head sizes. Weighs just 105 grams, ensuring a lightweight and comfortable feel for all-day wear.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733400558/op9lz06inw50osqkyhug.jpg', 'name': 'Suede String Cap - Black', 'price': 72000, 'product_id': '6751988d4d1f5eaa4135db22', 'sku': '046', 'stock': 'm: 20개, s: 20개'}
+--------------------
+
+[문서 ID: 675199284d1f5eaa4135db2e]
+  - 메타데이터: {'category': 'acc', 'description': 'Crafted from premium suede material, this cap features a soft and smooth texture that adds a touch of elegance and sophistication to your look. Enhanced with a functional string design, complemented by a trim engraved with the LEMARD logo for a subtle yet refined branding detail. Designed with an adjustable fit, allowing for personalized comfort and a secure wear suitable for various head sizes. Weighs just 105 grams, ensuring a lightweight and comfortable feel for all-day wear.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733400793/kxrdqaoro8h1wlnfoo2h.jpg', 'name': 'Suede String Cap - Brown', 'price': 71998, 'product_id': '675199284d1f5eaa4135db2e', 'sku': '047', 'stock': 's: 30개, m: 20개'}
+--------------------
+
+[문서 ID: 67519a3b4d1f5eaa4135db3a]
+  - 메타데이터: {'category': 'acc', 'description': 'STRING: Made from durable nylon, offering both flexibility and strength for everyday wear. PENDANT: Crafted from high-quality silver, adding a sleek and polished detail to the design. LOCK: Features a closure made of SILVER925 with plating for a refined finish, combined with allergen-free metal for safe and comfortable wear. One Size (Free): Total length of 17.5 cm, including a 5 cm extension chain for adjustable fitting. Please note that due to the nature of the product and the methods used for measurement, there may be a slight variation of 1 to 2 cm.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733401032/rzuirfadtoorron67vvb.jpg', 'name': 'Silver Knot Bracelet - Black', 'price': 88000, 'product_id': '67519a3b4d1f5eaa4135db3a', 'sku': '048', 'stock': 'm: 20개'}
+--------------------
+
+[문서 ID: 67519e004d1f5eaa4135db46]
+  - 메타데이터: {'category': 'acc', 'description': 'STRING: Made from durable surgical steel, offering both strength and resilience while maintaining a sleek, modern look. LOCK: The clasp is made of SILVER925 with plating, ensuring a refined finish, combined with allergen-free metal for a safe and comfortable wear experience. One Size (Free): Total length of 57 cm, including a 5 cm extension chain for an adjustable fit. Please note that due to the nature of the product and the methods used for measurement, there may be a slight variation of 1 to 2 cm.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733401688/phiibgbpk1yqdy1vei4s.jpg', 'name': 'Nickel Chain Necklace - Silver', 'price': 52000, 'product_id': '67519e004d1f5eaa4135db46', 'sku': '049', 'stock': 's: 23개, m: 23개'}
+--------------------
+
+[문서 ID: 67519f914d1f5eaa4135db5e]
+  - 메타데이터: {'category': 'acc', 'description': 'STRING: Made from durable surgical steel, offering both strength and resilience while maintaining a sleek, modern look. LOCK: The clasp is made of SILVER925 with plating, combined with allergen-free metal for a safe and comfortable wear experience. One Size (Free): Total length of 55 cm, including a 5 cm extension chain for an adjustable fit. Please note that due to the nature of the product and the methods used for measurement, there may be a slight variation of 1 to 2 cm.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1733402244/tvbvp8f8x0rsengl1nek.jpg', 'name': 'Snake Chain Necklace - Silver', 'price': 62000, 'product_id': '67519f914d1f5eaa4135db5e', 'sku': '050', 'stock': 'm: 34개'}
+--------------------
+
+[문서 ID: 68499fb6a3c3c25457ceb4eb]
+  - 메타데이터: {'category': 'top', 'description': 'Crafted from silky-finished fabric, this essential short-sleeve tee offers a smooth and soft touch for all-day comfort.\nFeaturing a subtle Le Marde printed logo as a point detail, it adds a refined yet casual accent to your everyday look.\nDesigned for daily wear, this versatile basic tee comes in five different color options, making it perfect for wearing on its own or layering with various outfits throughout the seasons.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1749655326/ew3jsumawrn6l0ovrmsz.jpg', 'name': 'Essential Short Sleeve - Black', 'price': 31500, 'product_id': '68499fb6a3c3c25457ceb4eb', 'sku': '051', 'stock': 'm: 10개, l: 20개'}
+--------------------
+
+[문서 ID: 6849a1b0a3c3c25457ceb4f2]
+  - 메타데이터: {'category': 'top', 'description': 'Crafted from silky-finished fabric, this essential short-sleeve tee offers a smooth and soft touch for all-day comfort.\nFeaturing a subtle Le Marde printed logo as a point detail, it adds a refined yet casual accent to your everyday look.\nDesigned for daily wear, this versatile basic tee comes in five different color options, making it perfect for wearing on its own or layering with various outfits throughout the seasons.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1749655855/afz8hl9zxiajmkmcgpkp.jpg', 'name': 'Essential Short Sleeve - White', 'price': 31500, 'product_id': '6849a1b0a3c3c25457ceb4f2', 'sku': '052', 'stock': 'm: 30개, l: 30개'}
+--------------------
+
+[문서 ID: 6849a61da3c3c25457ceb6f6]
+  - 메타데이터: {'category': 'top', 'description': 'Crafted from silky-finished fabric, this essential short-sleeve tee offers a smooth and soft touch for all-day comfort.\nFeaturing a subtle Le Marde printed logo as a point detail, it adds a refined yet casual accent to your everyday look.\nDesigned for daily wear, this versatile basic tee comes in five different color options, making it perfect for wearing on its own or layering with various outfits throughout the seasons', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1749657012/jss9wjflh3sqfli4tqit.jpg', 'name': 'Essential Short Sleeve - Gray', 'price': 31500, 'product_id': '6849a61da3c3c25457ceb6f6', 'sku': '053', 'stock': 's: 10개, m: 20개, l: 25개'}
+--------------------
+
+[문서 ID: 6849a765a3c3c25457ceb81f]
+  - 메타데이터: {'category': 'top', 'description': 'Designed in a semi-loose fit, this striped short-sleeve tee is made from smooth-touch cotton fabric for a comfortable and refined feel.\nA subtle Le Marde logo print on the lower front adds a clean, understated point detail.\nPerfect as a standalone piece or layered with other items, it’s a versatile addition to elevate any casual look.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1749657367/phgt4oea8xm24sk36iam.jpg', 'name': 'Essential Stripe Short Sleeve - Brown', 'price': 34200, 'product_id': '6849a765a3c3c25457ceb81f', 'sku': '054', 'stock': 's: 20개'}
+--------------------
+
+[문서 ID: 6849a87ba3c3c25457ceb8b5]
+  - 메타데이터: {'category': 'top', 'description': 'Designed in a semi-loose fit, this striped short-sleeve tee is made from smooth-touch cotton fabric for a comfortable and refined feel.\nA subtle Le Marde logo print on the lower front adds a clean, understated point detail.\nPerfect as a standalone piece or layered with other items, it’s a versatile addition to elevate any casual look.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1749657616/qjujqwpiudbwpszqpcpq.jpg', 'name': 'Essential Stripe Short Sleeve - Blue', 'price': 34200, 'product_id': '6849a87ba3c3c25457ceb8b5', 'sku': '055', 'stock': 'm: 30개, l: 30개'}
+--------------------
+
+[문서 ID: 6849a9c9a3c3c25457ceb9db]
+  - 메타데이터: {'category': 'pants', 'description': 'Crafted using a variety of washing techniques, these denim shorts deliver a distinctive vintage-inspired look.\nThe raw-edge hem with distressed detailing adds a rugged finish, while the engraved Le Marde button and metal label offer subtle signature accents.\nA standout piece that blends character and craftsmanship, perfect for elevating casual outfits with a touch of edge.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1749657957/mrkn8odack3iwihxpvgi.jpg', 'name': 'Washed Distressed Denim Half Pants - Black', 'price': 62100, 'product_id': '6849a9c9a3c3c25457ceb9db', 'sku': '056', 'stock': 'm: 30개, l: 25개'}
+--------------------
+
+[문서 ID: 6849ab20a3c3c25457ceba84]
+  - 메타데이터: {'category': 'pants', 'description': 'Crafted using a variety of washing techniques, these denim shorts deliver a distinctive vintage-inspired look.\nThe raw-edge hem with distressed detailing adds a rugged finish, while the engraved Le Marde button and metal label offer subtle signature accents.\nA standout piece that blends character and craftsmanship, perfect for elevating casual outfits with a touch of edge.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1749658304/xvppdfsv4adcqlzk5bnh.jpg', 'name': 'Washed Distressed Denim Half Pants - Light Blue', 'price': 62100, 'product_id': '6849ab20a3c3c25457ceba84', 'sku': '057', 'stock': 'm: 20개'}
+--------------------
+
+[문서 ID: 6849ae91a3c3c25457ceba93]
+  - 메타데이터: {'category': 'pants', 'description': 'Designed with side slits for enhanced mobility, these solid half pants offer both comfort and style.\nThe front stitch detailing adds a subtle point of interest, while the drawstring is finished with nickel tips for a refined touch.\nWith a fully elasticated waistband, they provide a relaxed fit and all-day comfort, making them perfect for everyday wear.', 'image_url': 'https://res.cloudinary.com/dxlv3kquk/image/upload/v1749659123/j7ktthnzlkcpgl8yuv86.jpg', 'name': 'Solid Side-Slit Pants - Black', 'price': 53100, 'product_id': '6849ae91a3c3c25457ceba93', 'sku': '058', 'stock': 'm: 30개, l: 16개'}
+--------------------
+
+✅ 검증 완료: 데이터가 성공적으로 저장된 것으로 보입니다.
+--- 검증 종료 ---

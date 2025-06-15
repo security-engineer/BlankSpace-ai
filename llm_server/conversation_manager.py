@@ -2,6 +2,7 @@ from langchain_community.chat_models import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import AIMessage, HumanMessage
 import os
+import re
 
 from rag_module import get_rag_module
 
@@ -53,6 +54,23 @@ class ConversationManager:
         self.chain = self.prompt_template | self.llm
         print("LangChain 체인 설정 완료.")
 
+        # 키워드-카테고리 매핑 테이블 초기화
+        self.category_mapping = {
+            'necklace': '목걸이',
+            'chain': '체인',
+            'belt': '벨트',
+            'shirt': '셔츠',
+            'pants': '바지',
+            'accessory': '악세사리',
+            'acc': '악세사리',
+            'shoes': '신발',
+            'hat': '모자',
+            'bag': '가방',
+            'outer': '아우터',
+            'jacket': '자켓',
+            'coat': '코트',
+        }
+
     def _get_chat_history(self, session_id: str):
         """세션 ID에 해당하는 대화 기록을 가져옵니다."""
         if session_id not in self.session_histories:
@@ -65,15 +83,78 @@ class ConversationManager:
             self.session_histories[session_id] = []
             print(f"세션 {session_id}의 대화 기록이 초기화되었습니다.")
 
+    def extract_keywords(self, text):
+        """사용자 메시지에서 검색 키워드를 추출합니다."""
+        # 한국어 키워드 사전 (쇼핑 관련 키워드)
+        korean_keywords = {
+            '목걸이', '귀걸이', '반지', '팔찌', '시계', '모자', '벨트', '신발', 
+            '바지', '셔츠', '자켓', '코트', '가방', '지갑', '안경', '선글라스',
+            '악세사리', '액세서리', '패션', '의류'
+        }
+        
+        # 사용자 메시지에서 키워드 추출
+        keywords = []
+        
+        # 1. 한국어 키워드 매칭
+        for keyword in korean_keywords:
+            if keyword in text:
+                keywords.append(keyword)
+        
+        # 2. 영어 키워드 매칭 (영어-한국어 매핑 테이블 활용)
+        for eng_key, kor_value in self.category_mapping.items():
+            if eng_key.lower() in text.lower():
+                keywords.append(eng_key)
+                if kor_value not in keywords:
+                    keywords.append(kor_value)
+        
+        print(f"추출된 키워드: {keywords}")
+        return keywords
+
+    def keyword_search(self, keyword):
+        """키워드 기반으로 상품을 검색합니다."""
+        results = []
+        
+        try:
+            # 임베딩 검색을 활용하여 키워드로 검색
+            keyword_results = self.rag_module.search(keyword)
+            if keyword_results:
+                results.extend(keyword_results)
+                print(f"키워드 '{keyword}'로 {len(keyword_results)}개 상품 찾음")
+        except Exception as e:
+            print(f"키워드 검색 중 오류: {e}")
+        
+        return results
+
     def handle_conversation_turn(self, session_id: str, user_message: str, page_info: dict) -> dict:
         """
         한 턴의 대화를 처리하고, 추천 상품 정보(메타데이터)를 함께 반환합니다.
         """
         try:
-            # RAG로 관련 상품 검색
-            search_query = f"Page Context: {page_info.get('pageTitle', 'N/A')}. User Query: {user_message}"
-            retrieved_docs = self.rag_module.search(search_query)
+            # 1. 검색 쿼리 최적화: 사용자 메시지에 더 가중치를 둠
+            # 기존: search_query = f"Page Context: {page_info.get('pageTitle', 'N/A')}. User Query: {user_message}"
+            search_query = user_message  # 사용자 메시지만으로 검색
             
+            # 2. RAG로 관련 상품 검색
+            retrieved_docs = self.rag_module.search(search_query)
+            print(f"RAG 검색 결과: {len(retrieved_docs)}개 문서 발견")
+            
+            # 3. 검색 결과가 부족한 경우 키워드 기반 보조 검색 수행
+            if len(retrieved_docs) < 2:
+                print("검색 결과가 부족하여 키워드 기반 검색 시도...")
+                keywords = self.extract_keywords(user_message)
+                for keyword in keywords:
+                    keyword_results = self.keyword_search(keyword)
+                    if keyword_results:
+                        # 중복 제거하면서 결과 추가
+                        existing_ids = {doc.get('metadata', {}).get('product_id') for doc in retrieved_docs}
+                        for doc in keyword_results:
+                            doc_id = doc.get('metadata', {}).get('product_id')
+                            if doc_id and doc_id not in existing_ids:
+                                retrieved_docs.append(doc)
+                                existing_ids.add(doc_id)
+                        print(f"키워드 '{keyword}'로 추가 검색 후 총 {len(retrieved_docs)}개 문서")
+                        break
+                        
             # 추천된 상품의 메타데이터를 저장할 리스트
             recommended_products = [doc.get('metadata', {}) for doc in retrieved_docs]
 

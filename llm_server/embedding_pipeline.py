@@ -15,6 +15,68 @@ load_dotenv()
 # 로깅 설정
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+# [최종 강화 버전] 상품 리스트와 미래 확장성을 모두 고려한 영-한 키워드 매핑 사전
+PRODUCT_KEYWORD_MAP = {
+    # --- 상의 (Tops) ---
+    'top': '상의',
+    'hoodie': '후드티',
+    'jip-up': '집업',
+    'zip-up': '집업', # 유의어 추가
+    'knit': '니트',
+    'cardigan': '가디건',
+    'shirts': '셔츠',
+    'shirt': '셔츠',
+    'sleeve': '티셔츠',
+    'tee': '티셔츠',
+    'blouse': '블라우스',
+
+    # --- 하의 (Bottoms) ---
+    'bottom': '하의', # 일반 카테고리 추가
+    'pants': '바지',
+    'trousers': '바지', # 유의어 추가
+    'denim': '데님',
+    'jeans': '청바지',
+    'slacks': '슬랙스',
+    'skirt': '스커트',
+    'shorts': '반바지',
+    'half pants': '반바지',
+
+    # --- 아우터 (Outers) ---
+    'outer': '아우터',
+    'jacket': '자켓',
+    'blazer': '블레이저',
+    'coat': '코트',
+    'padding': '패딩',
+    'mustang': '무스탕',
+    'jumper': '점퍼',
+
+    # --- 신발 (Shoes) ---
+    'shoes': '신발',
+    'footwear': '신발', # 유의어 추가
+    'derby': '더비 슈즈',
+    'boots': '부츠',
+    'sneakers': '스니커즈',
+    'sandals': '샌들',
+    'loafers': '로퍼',
+    'wallabee': '왈라비',
+
+    # --- 악세사리 (Accessories) ---
+    'accessory': '악세사리',
+    'accessories': '악세사리', # 복수형 추가
+    'acc': '악세사리',
+    'necklace': '목걸이',
+    'chain': '체인',
+    'bracelet': '팔찌',
+    'ring': '반지',
+    'earring': '귀걸이',
+    'belt': '벨트',
+    'cap': '캡모자',
+    'hat': '모자',
+    'warmer': '워머',
+    'bag': '가방',
+    'watch': '시계',
+}
+
 def get_db_connection(db_name="blankspace-shopping-mall"):
     """MongoDB에 연결하고 데이터베이스 객체를 반환합니다."""
     try:
@@ -81,7 +143,7 @@ def preprocess_product_data(product: dict) -> tuple[str, dict, str]:
         if valid_stock:
             stock_str = ", ".join([f"{size}: {qty}개" for size, qty in valid_stock.items()])
 
-    # --- 임베딩될 텍스트 내용 구성 (height, weight 제외) ---
+    # --- 임베딩될 텍스트 내용 구성 ---
     content_parts = [
         f"상품명: {name}",
         f"카테고리: {category_str}",
@@ -101,6 +163,20 @@ def preprocess_product_data(product: dict) -> tuple[str, dict, str]:
         if wash_str:
             content_parts.append(f"세탁 정보: {wash_str}")
 
+    # --- 데이터 강화: 영어 상품명/설명에서 키워드를 찾아 한국어 의미 추가 ---
+    searchable_text = (name + " " + description).lower()
+    korean_keywords = set() # 중복 방지를 위해 set 사용
+    
+    for eng_key, kor_value in PRODUCT_KEYWORD_MAP.items():
+        if eng_key in searchable_text:
+            korean_keywords.add(kor_value)
+    
+    if korean_keywords:
+        korean_keywords_str = ", ".join(korean_keywords)
+        # 임베딩될 content에 한국어 키워드 추가
+        content_parts.append(f"검색용 한국어 키워드: {korean_keywords_str}")
+        logging.info(f"상품 '{name}'에 한국어 키워드 '{korean_keywords_str}' 추가됨")
+
     content = "\\n".join(content_parts).strip()
     
     # 이미지 URL 추출
@@ -115,7 +191,7 @@ def preprocess_product_data(product: dict) -> tuple[str, dict, str]:
         elif isinstance(first_item, str):
             image_url = first_item
 
-    # --- 최종 메타데이터 (height, weight 제외) ---
+    # --- 최종 메타데이터 ---
     metadata = {
         'product_id': doc_id,
         'sku': product.get('sku', ''),
@@ -126,6 +202,11 @@ def preprocess_product_data(product: dict) -> tuple[str, dict, str]:
         'image_url': image_url,
         'stock': stock_str,
     }
+    
+    # 디버깅 및 가독성을 위해 메타데이터에도 한국어 키워드 추가
+    if korean_keywords:
+        metadata['korean_keywords'] = ", ".join(korean_keywords)
+
 
     return content, metadata, doc_id
 
