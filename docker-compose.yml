@@ -1,0 +1,77 @@
+services:
+  # Ollama 로컬 LLM 서버 (서버 역할만 수행)
+  ollama:
+    image: ollama/ollama
+    container_name: ollama_server
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./ollama_data:/root/.ollama
+    networks:
+      - ai_network
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  # ChromaDB 벡터 데이터베이스 서버
+  chromadb:
+    image: chromadb/chroma:0.5.0
+    container_name: chroma_db_server
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./chroma_data:/chroma/.chroma/
+    networks:
+      - ai_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/heartbeat"]
+      interval: 5s
+      timeout: 10s
+      retries: 5
+
+  # FastAPI 기반 AI 비서 API 서버
+  llm_api_server:
+    build:
+      context: ./llm_server
+      dockerfile: Dockerfile
+    container_name: llm_api_server
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    ports:
+      - "62000:8001"
+    volumes:
+      - ./llm_server:/app
+      - ./models:/app/models
+      - ./huggingface_cache:/app/huggingface_cache
+    env_file:
+      - ./llm_server/.env
+    depends_on:
+      # 각 서비스가 시작된 후에 llm_api_server가 시작되도록 설정
+      ollama:
+        condition: service_started
+      chromadb:
+        condition: service_healthy
+    networks:
+      - ai_network
+    command: uvicorn llm_service:app --host 0.0.0.0 --port 8001
+    # 컨테이너가 꺼지지 않고 계속 실행되도록 sleep infinity 명령어로 대체
+    # command: sh -c "sleep infinity"
+    # 서비스가 재시작되도록 설정
+    restart: unless-stopped
+
+networks:
+  ai_network:
+    driver: bridge
+
+volumes:
+  ollama_data:
+  chroma_data: 

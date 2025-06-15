@@ -1,0 +1,26 @@
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-dotenv==1.0.1
+openai-whisper==20231117
+piper-tts==1.2.0
+langchain==0.2.1
+langchain-community==0.2.1
+chromadb==0.5.0
+sentence-transformers==2.6.1
+uvloop==0.19.0
+httptools==0.6.1
+pydantic==2.7.1
+# TTS==0.22.0 # 의존성 충돌로 piper-tts로 교체
+# onnxruntime==1.18.0 # GPU 가속을 위해 onnxruntime-gpu로 교체
+onnxruntime-gpu==1.18.0
+# MongoDB 연결을 위한 라이브러리
+pymongo==4.7.2
+# sentence-transformers의 torch 버전 호환성 및 보안 취약점 해결을 위해 명시
+torch==2.3.1
+torchaudio==2.3.1
+torchvision==0.18.1
+langchain-text-splitters
+accelerate
+safetensors
+TTS
+onnxruntime 
